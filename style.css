@@ -34,48 +34,57 @@ nav h1{
 
 
 
-/*Style Main*/
+/* Style Main */
 main{
     width: 100vw;
     height: 80vh;
-    background: gray;
+    background-image: url("img/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 40px 0;
+    margin-top: 40px;
 }
 main img{
     width: 240px;
     border-radius: 500px;
 }
 main h1{
+    padding-top: 30px;
     font-size: 60px;
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-main p{
-    color: white;
+main p {
+    padding-top: 30px;
+    color: white; 
     text-align: center;
     font-size: 18px;
     font-family: 'Courier New', Courier, monospace;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 
-/*Style Project*/
+/* Style Project */
 .project{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 100vw;
+    background: #ecf4fc;
+    padding: 50px 0 120px 0;
 }
-.secao{
+.sessao{
     width: 98vw;
-    margin: 20px 17px 0 0;
+    margin: 50px 17px 0 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: auto;
 }
 .project1{
     display: flex;
@@ -83,10 +92,11 @@ main p{
     align-items: center;
     text-align: center;
     flex-direction: column;
-    width: 500px;
-    height: 400px;
-    margin: 0 5px;
+    width: 370px;
+    height: 410px;
+    margin: 20px;
     border: 1px solid #a0a0a0;
+    background: white;
 }
 .project1 img{
     width: 97%;
@@ -103,6 +113,8 @@ main p{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 0 14px;
     overflow: hidden;
+    width: 100%;
+    height: 20%;
 }
 .project1 a{
     text-decoration: none;
@@ -119,10 +131,9 @@ main p{
     margin: 25px 0;
 }
 
-/*Style Footer*/
+/* Style Footer */
 footer{
     background: #201b2c;
-    margin-top: 40px;
     width: 100vw;
     height: 400px;
     text-align: center;
@@ -157,4 +168,57 @@ footer h3{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-top: 100px;
     font-size: 13px;
+}
+
+
+@media screen and (max-width:1039px) {
+    .project1{
+        height: 420px;
+        margin: 0 5px;
+    }
+}
+@media screen and (max-width: 950px) {
+    .project1 h1{
+        font-size: 20px;
+    }
+    .project1 p{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 895px) {
+    .project1 p{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 842px) {
+    .sessao {
+        flex-wrap: wrap; 
+    }
+    .project1 {
+        width: 400px; 
+        margin: 10px; 
+    }
+    .project1 p{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 592px) {
+    .navegacao a{
+        font-size: 15px;
+    }
+    nav h1{
+        font-size: 18px;
+    }
+    main h1{
+        font-size: 40px;
+    }
+    main p{
+        font-size: 16px;
+        font-weight: bold;
+        letter-spacing: 1px
+    }
+    main img{
+        width: 200px;
+        margin-bottom: 60px;
+    }
 }
